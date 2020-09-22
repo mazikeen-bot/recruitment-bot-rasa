@@ -5,7 +5,8 @@
 Candidates who apply to the jobs. 
 - The chatbot is deployed on Heroku via Docker, since the Rasa installation was exceeding 
 the free limit provided by Heroku.
-- The code in this repository is compatible with both the Web version of the chatbot and also for the Whatsapp version.
+- This repository contains the backend code which is compatible with both the Web version of the chatbot and 
+also for the Whatsapp version.
 
 ## Demo
 <img src="image/demo.png" alt="Isaac - The Recruitment Bot" width="1000" height="500">
