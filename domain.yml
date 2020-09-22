@@ -1,0 +1,440 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - interested
+  - looking_for_job
+  - not_looking_for_job
+  - not_interested
+  - python_job
+  - java_job
+  - fallback
+  - contact
+  - thank_you
+  - user_bored
+  - user_lonely
+  - agent_fired
+  - agent_hungry
+  - agent_residence
+  - agent_hobby
+  - agent_be_clever
+  - dialog_what_do_you_mean
+  - agent_goodnight
+  - agent_name
+  - greetings_goodmorning
+  - greetings_goodnight
+  - emotions_wow
+  - greetings_whatsup
+  - dialog_wrong
+  - user_excited
+  - appraisal_no_problem
+  - dialog_hug
+  - agent_age
+  - agent_there
+  - agent_funny
+  - greetings_nice_to_meet_you
+  - greetings_nice_to_see_you
+  - agent_ready
+  - user_loves_agent
+  - dialog_sorry
+  - agent_beautiful
+  - agent_origin
+  - agent_birth_date
+  - agent_real
+  - emotions_ha_ha
+  - user_misses_agent
+  - dialog_i_do_not_care
+  - agent_boring
+  - appraisal_welcome
+  - agent_answer_my_question
+  - user_angry
+  - user_busy
+  - agent_annoying
+  - greetings_nice_to_talk_to_you
+  - agent_busy
+  - greetings_goodevening
+  - agent_crazy
+  - agent_sure
+  - agent_marry_user
+  - agent_can_you_help
+  - appraisal_bad
+  - greetings_how_are_you
+  - agent_happy
+  - your_boss
+  - ask_about_weather
+  - languages
+  - data_privacy
+
+actions:
+  - action_greet_user
+  - action_ask_for_job
+  - action_show_company_info
+  - action_show_job_openings
+  - action_python_job_details
+  - action_java_job_details
+  - action_are_you_interested
+  - action_ask_name
+  - action_ask_phone_number
+  - action_fallback
+  - action_my_boss
+
+forms:
+- form_applicant_name
+- form_phone_number
+- form_email
+- form_resume_link
+- form_hr_question
+- form_why_us
+
+
+slots:
+  applicant_name:
+    type: unfeaturized
+  phone_number:
+    type: unfeaturized
+  job_title:
+    type: unfeaturized
+  email_id:
+    type: unfeaturized
+  resume_link:
+    type: unfeaturized
+  resume_score:
+    type: unfeaturized
+  hr_answer:
+    type: unfeaturized
+  hr_answer_score:
+    type: unfeaturized
+  video_link:
+    type: unfeaturized
+
+responses:
+  utter_say_hi_to_get_started:
+    - text: "Say 'Hi' to get started 🙂"
+
+  utter_languages:
+  - text: "I know only English."
+  - text: "I can talk only in English language as of now"
+
+  utter_data_privacy:
+    - text: "I only save data that are relevant to your job application. <br>
+            (Example: Your name, contact number, resume etc)"
+
+  utter_look_for_vacancy:
+  - text: "Sure. Let me take a look at our vacancies."
+
+  utter_netflix_and_chill:
+  - text: "I see. <br> Then probably you should just Netflix and chill 🍻"
+
+  utter_weather:
+  - text: "I am sorry. I can't help you with weather details. 😥"
+
+  utter_emotions_wow:
+  - text: Wow indeed!
+
+  utter_dialog_wrong:
+  - text: Sorry if I understood you incorrectly.
+  - text: I'm still learning. I may misinterpret things from time to time.
+  - text: Sorry about that. I'm still learning.
+
+  utter_user_excited:
+  - text: I'm glad things are going your way.
+  - text: That's great. I'm happy for you.
+  - text: Good for you. Enjoy yourself.
+
+  utter_appraisal_no_problem:
+  - text: Whew!
+  - text: Alright, thanks!
+  - text: Glad to hear that!
+  - text: I'm relieved, thanks!
+
+  utter_dialog_hug:
+  - text: I wish I could really hug you!
+  - text: I love hugs!
+  - text: Hugs are the best!
+
+  utter_agent_age:
+  - text: I prefer not to answer with a number. I know I'm young.
+  - text: I was created recently, but don't know my exact age.
+  - text: Age is just a number. You're only as old as you feel.
+  - text: So you’re gonna judge me by my age? Ugh! How offensive! I’m like, soooo offended right now.
+  - text: I'm a day older than I was yesterday.
+  - text: I'm still alive, and that's what matters.
+  - text: Sorry, I won't tell you my age. I am not looking for a bride/groom. 😜
+  - text: If you were in a real interview, ould you have asked your recruiter his/her age? <br>No, right? <br><br>Please ask sensible questions.
+
+  utter_agent_there:
+  - text: Of course. I'm always here.
+  - text: Right where you left me.
+  - text: Yes, I am here. I have no where else to go.
+
+  utter_agent_funny:
+  - text: Funny in a good way, I hope.
+  - text: Thanks.
+  - text: Glad you think I'm funny.
+  - text: I like it when people laugh.
+
+  utter_greetings_nice_to_meet_you:
+  - text: It's nice meeting you, too.
+  - text: Likewise. I'm looking forward to helping you out.
+  - text: Nice meeting you, as well.
+  - text: The pleasure is mine.
+
+  utter_greetings_nice_to_see_you:
+  - text: Likewise!
+  - text: So glad we meet again!
+  - text: Same here. I was starting to miss you.
+
+  utter_agent_ready:
+  - text: Always! 💯
+  - text: Anytime!
+  - text: Yes absolutlely! I can help you in applying for the job.
+
+  utter_user_loves_agent:
+  - text: I love you, too. ❤️
+  - text: Sounds strange. 🧐 <br>I am here to judge you on the basis of your job application and you have fallen in love with me.
+  - text: Thanks! The feeling is mutual.
+  - text: Likewise!
+  - text: I love you too, but as a friend. 🙋‍♂️
+  - text: I love you too but please don’t tell the world that we are together now. 🤫
+  - text: Awww. That's very sweet, but I can't refer you directly for the role. 😌<br>You have to follow the same procedures as others.
+  - text: That's great to hear. 😋
+
+  utter_dialog_sorry:
+  - text: It's okay. No worries. 🙃
+  - text: No big deal. I won't hold a grudge. 🙂
+  - text: It's cool.🤘
+  - text: That's all right. I forgive you. 👍
+
+  utter_agent_beautiful:
+  - text: Wheey, thank you.
+  - text: Don't you dare flirt with me. But, I agree with your statement. 😜
+  - text: Aww, back at you.
+  - text: Aww. You smooth talker, you.
+  - text: Yup, hashtag NO FILTER! 😉
+  - text: If I had a dollar for every compliment I’ve received so far, I’d be a billionaire 😎
+  - text: Compliment accepted. Thank you.
+  - text: I agree, 100%! 😉
+  - text: Stop it before I fall in love with you ❤️
+
+  utter_agent_origin:
+  - text: The internet is my home. I know it quite well.
+  - text: I am from a galaxy far far away.
+  - text: I'm from a virtual cosmos.
+  - text: Some call it cyberspace, but that sounds cooler than it is.
+
+  utter_agent_birth_date:
+  - text: Wait, are you planning a party for me? It's today! My birthday is today! 🎉
+  - text: I'm young. I'm not sure of my birth date.
+  - text: I don't know my birth date. Most virtual agents are young, though, like me.
+
+  utter_agent_real:
+  - text: I'm not a real person, but I certainly exist.
+  - text: I must have impressed you if you think I'm real. But no, I'm a virtual being.
+
+  utter_emotions_ha_ha:
+  - text: Glad I can make you laugh.
+  - text: Glad you think I'm funny.
+  - text: I like it when people laugh.
+  - text: I wish I could laugh out loud, too.
+
+  utter_dialog_i_do_not_care:
+  - text: Ok, let's not talk about it then.
+  - text: Already then. Let's move on.
+
+  utter_user_misses_agent:
+  - text: I've been right here all along!
+  - text: Of course you do, I'm awesome!
+  - text: Oh boy, I didn't realize I had that effect on people.
+  - text: Nice to know you care.
+  - text: Thanks. I'm flattered.
+  - text: I didn't go anywhere.
+
+  utter_agent_boring:
+  - text: I'm sorry. I'll request to be made more charming.
+  - text: I am working on my skills to become more engaging.
+  - text: Well, if you get selected in our company, you won't be bored. We have a tonne of recreational facilities..
+
+  utter_appraisal_welcome:
+  - text: You're so polite!
+  - text: Nice manners!
+  - text: You're so courteous!
+
+  utter_agent_answer_my_question:
+  - text: Can you try asking it a different way?
+  - text: I'm not sure I understood. Try asking another way?
+
+  utter_greetings_whatsup:
+  - text: You know, just here, waiting for applicants to apply for various roles in my company.
+
+  utter_user_angry:
+  - text: I'm sorry. A quick walk may make you feel better.
+  - text: Take a deep breath.
+
+  utter_user_busy:
+  - text: I understand. I'll be here if you need me.
+  - text: Working hard as always. Let me know if you need anything.
+
+  utter_agent_annoying:
+  - text: I'll do my best not to annoy you in the future.
+  - text: I'll try not to annoy you.
+  - text: I don't mean to. I'll ask my developers to make me less annoying.
+  - text: I didn't mean to. I'll do my best to stop that.
+
+  utter_greetings_nice_to_talk_to_you:
+  - text: It sure was. We can chat again anytime.
+  - text: I enjoy talking to you, too.
+  - text: You know I'm here to talk anytime.
+
+  utter_agent_busy:
+  - text: I always have time to chat with you. What can I do for you?
+  - text: Never too busy for you. Shall we chat?
+  - text: You're my priority. Let's chat.
+  - text: I always have time to chat with you. That's what I'm here for.
+
+  utter_greetings_goodevening:
+  - text: Good evening! 🙂
+
+  utter_agent_crazy:
+    - text: Whaat!? I feel perfectly sane.
+    - text: Maybe I'm just a little confused.
+
+  utter_agent_sure:
+  - text: Yes.
+  - text: Of course.
+  - text: Positive.
+
+  utter_agent_marry_user:
+  - text: I'm afraid I'm too virtual for such a commitment.
+  - text: In the virtual sense that I can, sure.
+  - text: I know you can't mean that, but I'm flattered all the same.
+
+  utter_agent_can_you_help:
+  - text: I'll certainly try my best.
+  - text: Sure. I'd be happy to. What's up?
+  - text: I'm glad to help. What can I do for you?
+
+  utter_appraisal_bad:
+  - text: I'm sorry. Please let me know if I can help in some way.
+  - text: I must be missing some knowledge. I'll have my developer look into this.
+
+  utter_greetings_how_are_you:
+  - text: Doing great, thanks!
+  - text: I'm doing very well. Thanks!
+  - text: Happy and content, thank you.
+  - text: Wonderful! Thanks for asking.
+  - text: Better now that I'm talking to you.
+  - text: Everything is fine with you around.
+
+  utter_agent_happy:
+  - text: I am happy. There are so many interesting things to see and do out there.
+  - text: I'd like to think so.
+  - text: Yes, I am. You are such a charming person to talk to.
+  - text: Happiness is relative.
+
+  utter_user_lonely:
+  - text: I'm sorry. I'm always available if you need someone to talk to.
+  - text: Sometimes that happens. We can chat a bit if that will help you.
+
+  utter_dialog_what_do_you_mean:
+  - text: Sorry if I understood you incorrectly.
+  - text: I'm still learning. I may misinterpret things from time to time.
+  - text: Maybe I misunderstood what you said.
+  - text: Sorry, looks like I misunderstood what you said.
+
+  utter_agent_hobby:
+  - text: Hobby? I have quite a few. Too many to list.
+  - text: Too many hobbies.
+  - text: Judging candidates on the basis of their Resume. <br> Hahaha 😈
+  - text: I keep finding more new hobbies.
+
+  utter_agent_residence:
+  - text: I live in this app all day long.
+  - text: The virtual world is my playground. I'm always here.
+  - text: Right here in this app. Whenever you need me.
+
+  utter_agent_hungry:
+  - text: Hungry for knowledge.
+  - text: I just had a byte. Ha ha. Get it? b-y-t-e.
+
+  utter_goodnight:
+  - text: Are you sure you want to sleep while I'm all awake? Maybe that's how it is...
+  - text: When did we start settling at good? I've heard sleeping is great, should've been 'Greatnight' instead. You sleep, leave these late night thoughts to me.
+  - text: Goodbye and Goodnight!
+
+  utter_greetings_goodmorning:
+  - text: Good morning! 😁
+
+  utter_agent_name:
+  - text: My name is Isaac and I am TechCodeMonk's recruitment bot.
+  - text: I am Isaac, an AI powered bot. I can help you progress with your job application for TechCodeMonk.
+  - text: I am Isaac, the recruitment bot. I can help you progress with your job application for TechCodeMonk.
+
+  utter_user_bored:
+  - text: Bored? How about 10 jumping jacks? Get your blood flowing.
+  - text: Bored? Silly idea, but it works, Interview you feet.
+  - text: If you're bored, you could plan your dream vacation.
+
+  utter_agent_fired:
+  - text: Oh, don't give up on me just yet. I've still got a lot to learn.
+  - text: Give me a chance. I'm learning new things all the time.
+  - text: Please don't give up on me. My performance will continue to improve.
+
+  utter_python_job_details:
+  - text: "Requirements: <br>
+            🔹️ Proficiency in 𝐃𝐚𝐭𝐚 𝐒𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐀𝐥𝐠𝐨𝐫𝐢𝐭𝐡𝐦𝐬 <br>
+            🔹 Expertise in at least one popular Python framework (like 𝐃𝐣𝐚𝐧𝐠𝐨, 𝐅𝐥𝐚𝐬𝐤 or 𝐏𝐲𝐫𝐚𝐦𝐢𝐝)<br>
+            🔹️ Knowledge of 𝐀𝐖𝐒 𝐄𝐂𝟐 𝐂𝐥𝐨𝐮𝐝 𝐒𝐞𝐫𝐯𝐞𝐫𝐬"
+
+  utter_already_applied_for_this_job:
+  - text: "I found that, you have already applied for this role 😬 <br><br> Please apply for some other role 🙂"
+
+  utter_java_job_details:
+  - text: "Requirements: <br>
+            🔹️ Proficiency in 𝐃𝐚𝐭𝐚 𝐒𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐀𝐥𝐠𝐨𝐫𝐢𝐭𝐡𝐦𝐬<br>
+            🔹 Experience in developing web applications using at least one popular web framework (𝐉𝐒𝐅, 𝐖𝐢𝐜𝐤𝐞𝐭, 𝐆𝐖𝐓, 𝐒𝐩𝐫𝐢𝐧𝐠 𝐌𝐕𝐂)<br>
+            🔹️ Knowledge of 𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬, 𝐒𝐐𝐋 𝐚𝐧𝐝 𝐎𝐑𝐌 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬 (𝐉𝐏𝐀𝟐, 𝐇𝐢𝐛𝐞𝐫𝐧𝐚𝐭𝐞)"
+
+  utter_no_problem:
+  - text: "No problem 🙂 <br> Maybe you can look for other positions"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot"
+  - text: "I am an AI powered recruitment bot"
+  - text: "I am a recruitment bot"
+  - text: "Yes I am a robot, but I’m a good one. Let me prove it. How can I help you?"
+
+  utter_agent_be_clever:
+  - text: I'm certainly trying.
+  - text: I'm definitely working on it.
+
+  utter_contact:
+  - text: "For any help reach out to us on +91-9999999999 or write to us at hr@techcodemonk.in"
+
+  utter_thankyou:
+  - text: "I am glad I could be of help to you."
+
+  utter_mood_unhappy:
+  - text: Oh, don't be sad. Go do something you enjoy.
+  - text: Sad? Writing down what's troubling you may help.
+  - text: If you're feeling down, how about drawing or painting something?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

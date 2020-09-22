@@ -1,0 +1,7 @@
+rasa
+requests
+gspread
+oauth2client
+pyresparser
+spacy
+nltk
