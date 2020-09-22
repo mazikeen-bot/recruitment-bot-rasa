@@ -6,13 +6,13 @@ import requests
 spacy.load('en_core_web_sm')
 
 
-url = 'https://drive.google.com/file/d/1lTkuqhqCvjzABAW7MHCgGFxejzcgqpfT/view?usp=sharing'
-user_email = "test@gmail.com"
-
 internship_word_list = ['intern', 'internship', 'research', 'fellowship']
 python_dev_word_list = ['python', 'api', 'aws', 'ec2', 'django', 'flask', 'amazon web services', 'machine learning',
                     'ai', 'artificial intelligence', 'data science', 'database', 'mysql', 'sql']
 
+
+
+#  download resume from g-drive link
 def download_resume(url, user_email):
     g_drive_file_id = url.split("/d/")[1].split("/")[0]
     gdrive_direct_link = f"https://drive.google.com/uc?id={g_drive_file_id}"
@@ -57,5 +57,3 @@ def calculate_overall_score(url, user_email, job_domain_word_list):
         return resume_score
 
     return -1
-
-# print(calculate_overall_score(url, user_email, python_dev_word_list))
