@@ -9,3 +9,14 @@ the free limit provided by Heroku.
 
 ## Demo
 <img src="image/demo.png" alt="Isaac - The Recruitment Bot" width="1000" height="500">
+
+## Files in the program
+- **actions.py**: This is the main app file responsible for chatbot functionalites using Rasa.
+- **scripts/**: Contains scripts for interacting with G-sheets, Answer analysis, Resume parsing and Video analysis
+- **data/nlu.md**: Contains intents and respective training phrases for the bot
+- **data/stories.md**: Contains the conversation flow of the bot
+- **domain.yml**: All the intents, forms, actions for the bot are listed in this file
+
+## Usage
+### Run app
+Use [the link to the production server](https://skamranahmed.github.io/ai-recruitment-bot/) directly.
