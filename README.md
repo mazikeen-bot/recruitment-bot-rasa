@@ -8,4 +8,4 @@ the free limit provided by Heroku.
 - The code in this repository is compatible with both the Web version of the chatbot and also for the Whatsapp version.
 
 ## Demo
-<img src="image/demo.png" alt="Isaac - The Recruitment Bot" width="1440" height="867">
+<img src="image/demo.png" alt="Isaac - The Recruitment Bot" width="1000" height="500">
