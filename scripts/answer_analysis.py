@@ -2,7 +2,7 @@ import requests
 import json
 from statistics import mean
 
-
+#  use of IBM Watson's tone analyser api
 def answer_score(text):
     data = {"toneInput[text]": text, "contentLanguage": "en"}
     tone_analyser_api = "https://tone-analyzer-demo.ng.bluemix.net/api/tone"
